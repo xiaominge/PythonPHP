@@ -49,10 +49,8 @@ function delsvndir($svndir)
     }
 }
 
-$dir = dirname('/Users/xuyakun/wwwroot/test/delete_svn');
+$dir = '/Users/xuyakun/wwwroot/test/delete_svn';
 delsvn($dir);
-
-// echo "/Users/xuyakun/wwwroot/test/delete_svn/svn/svn";
 
 $output = ob_get_contents();
 ob_end_clean();
